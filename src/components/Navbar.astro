@@ -1,0 +1,82 @@
+<section id="navbar">
+	<nav class="flex w-full justify-between py-3 capitalize items-center">
+		<div class="">
+			<a id="logo" href="/" class="flex mr-8 items-center">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="#fff"
+					stroke="#fff"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+					height="24"
+					width="24"
+					class="lucide lucide-triangle"
+				>
+					<path
+						d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
+					></path>
+				</svg>
+				<h2>Verkel</h2>
+			</a>
+		</div>
+		<div id="nav-large" class="flex justify-between w-full items-center">
+			<div id="nav-links">
+				<a href="/products" class="mr-5">products</a>
+				<a href="/solutions" class="mr-5">solutions</a>
+				<a href="/resources" class="mr-5">resources</a>
+				<a href="/docs" class="mr-5">docs</a>
+				<a href="/pricing" class="mr-5">pricing</a>
+			</div>
+			<div id="nav-links-extra" class="flex items-center">
+				<a href="/contact" class="mr-2">contact</a>
+				<button
+					class="border border-[var(--secondary-alt)] bg-[var(--btn-bg)] rounded-[5px] py-1 px-3 capitalize mr-2 text-[var(--text-highlight)]"
+					>log in</button
+				>
+				<button
+					class="border rounded-[5px] py-1 px-3 capitalize mr-2 bg-[var(--text-highlight)] text-[var(--background)]"
+					>sign up</button
+				>
+			</div>
+		</div>
+		<div id="hamburger">
+			<div
+				class="flex flex-col rounded-full border p-2 border-[var(--secondary-alt)]"
+			>
+				<span>-</span><span>-</span>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<style>
+	#navbar {
+		font-size: var(--text-sm);
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	#logo {
+		font-family: "Gruppo", sans-serif;
+		font-size: 1.5rem;
+		font-weight: 900;
+		letter-spacing: -1px;
+	}
+	#nav-links > a {
+		padding: 10px;
+		border-radius: 100px;
+	}
+	#hamburger {
+		display: none;
+	}
+	@media (max-width: 1150px) {
+		#navbar {
+			padding: 0 1.5rem;
+		}
+		#nav-large {
+			display: none;
+		}
+		#hamburger {
+			display: block;
+		}
+	}
+</style>

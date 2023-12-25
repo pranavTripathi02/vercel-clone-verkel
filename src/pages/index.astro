@@ -1,0 +1,34 @@
+---
+import "../styles/index.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsBanner from "../components/NewsBanner.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+---
+
+<BaseLayout title="Verkel">
+	<NewsBanner
+		newsDescription="This website is created using <span class='text-hl'>Astro!</span> Design inspired by <span class='text-hl'>Vercel</span>."
+		newsLink="vercel.com"
+	/>
+	<main
+		class="relative border-l border-r border-[var(--secondary-alt)] text-center m-8"
+	>
+		<Card>
+			<Hero />
+		</Card>
+	</main>
+
+	<style>
+		main {
+			max-width: 1080px;
+			min-width: 250px;
+			display: flex;
+			flex-direction: column;
+			/* align-items: ; */
+			/* border: 1px solid white; */
+			margin: 2rem auto;
+			padding: 0;
+		}
+	</style>
+</BaseLayout>

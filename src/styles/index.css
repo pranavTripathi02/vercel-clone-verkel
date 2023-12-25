@@ -1,0 +1,31 @@
+body {
+}
+.text-l {
+  font-size: clamp(16px, 2vw, 20px);
+}
+.btn-round {
+  border: 1px solid var(--secondary-alt);
+  border-radius: 100px;
+  background: var(--btn-bg);
+  color: var(--text-highlight);
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+.btn-round-secondary {
+  border: 1px solid var(--secondary-alt);
+  border-radius: 100px;
+  background: var(--secondary);
+  color: var(--text-highlight);
+  padding: 0.5rem;
+  margin: 0 1rem;
+}
+.btn-round-highlight {
+  border-radius: 100px;
+  background: var(--text-highlight);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+.text-hl {
+  color: var(--text-highlight);
+}

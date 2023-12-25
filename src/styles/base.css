@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist/Geist-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+@font-face {
+  font-family: "Geist-Light";
+  src: url("/fonts/Geist/Geist-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+@font-face {
+  font-family: "Geist-Extra";
+  src: url("/fonts/Geist/Geist-UltraBlack.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+@font-face {
+  font-family: "Gruppo";
+  src: url("/fonts/Gruppo/Gruppo-Regular.ttf");
+  /* font-weight: normal; */
+  /* font-style: normal; */
+  /* font-display: swap; */
+}
+
+:root {
+  font-family: "Geist", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  --background: #000;
+  --secondary: #1f1f1f;
+  --secondary-alt: #252525;
+  --btn-bg: #0a0a0a;
+  --text: #a1a1a1;
+  --text-highlight: #fff;
+
+  --text-sm: 0.875rem;
+}
+
+:root {
+  background-color: var(--background);
+  color: var(--text);
+}
